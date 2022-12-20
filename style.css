@@ -1,0 +1,495 @@
+:root{
+/*-------## Colors ##--------*/
+
+    /*----------Primary------------*/
+    --verydark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+
+    /*----------Accent------------*/ 
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+
+    /* hover-blue */
+    --hover-blue:hsla(224, 93%, 58%, 0.61);
+
+    /*----------Neutral------------*/ 
+    --light-grayish-blue: hsl(240, 75%, 98.5%);
+    --light-gray: hsl(0, 0%, 75%);
+
+
+/*----------font family------------*/ 
+
+    /*Headings, Call-to-actions, Header Navigation */
+    --primary: 'Raleway', sans-serif;
+
+    /*  Body */
+    --ff-open: 'Open Sans', sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: var(--ff-open);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+nav{
+    display: flex;
+    padding: 4rem 5rem;
+    align-items: center;
+    justify-content: space-between;   
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    list-style: none;
+    font-family: var(--primary);
+    color: var(--desaturated-blue);
+    cursor: pointer;
+    
+}
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+button{
+    background-color: var(--bright-blue);
+    color: var(--light-grayish-blue);
+    border: none;
+    border-radius: .3rem;
+    font-family: var(--primary);
+    font-weight: 700;
+    cursor: pointer;
+
+    box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
+    transition: all ease-in-out .3s;
+}
+ /* Section One  */
+ .section-one{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 89%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 7.5rem;
+ }
+ .section-one img,.section-two img{
+    width: 50%;
+}
+.section-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 4.9rem;
+    gap: 1.1rem;
+    color: var(--verydark-blue);
+
+
+}
+.section-description p{
+    letter-spacing: 1px;
+    max-width: 90%;
+    line-height: 1.4rem;
+} 
+.section-description h1{
+    font-size: 2.5rem;
+    font-family: var(--primary);
+    font-weight: 700;
+    line-height: 3.7rem;
+    word-spacing: 2px;
+    color: var(--verydark-blue);
+} 
+.section-one-email{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: .6rem;
+    font-family: var(--primary);
+}
+.section-one-email input{
+    border: 1px solid black;
+    border-radius: .3rem;
+    padding: .8rem 3.5rem .8rem .5rem;
+    font-family: var(--primary);
+    letter-spacing: 1px;
+    color: var(--light-gray);
+    
+}
+.section-one-email button{
+    padding: .8rem 1.5rem;
+    width: 66%;
+}
+.section-one-email input::placeholder, .section-three-email input::placeholder{
+    font-family: var(--primary);
+ color: var(--light-gray); 
+    letter-spacing: 1px;
+    opacity: .8;
+}
+
+ /* Section Two  */
+ .section-description-2{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+    
+ }
+ .section-two{
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    /* margin-bottom: 7.5rem; */
+ }
+ .section-two-cover{
+    max-width: 40%;
+    height: 53%;
+    margin-top: 4rem;
+    padding-right:2rem;
+ }
+ .info-main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem 5rem;
+    width: 74%;
+    
+ }
+ .info-main h2{
+    font-family: var(--primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+ }
+ .info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+ }
+ 
+ .linked-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+ }
+ .linked-info a{
+    color: var(--moderate-cyan);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    word-spacing: 1px;
+    position: relative;
+    width: max-content;
+ }
+ .linked-info a::after{ 
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 120%;
+    background-color: var(--moderate-cyan);
+    color: var(--moderate-cyan);
+ }
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    max-width: 39%;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 0 auto;
+    margin-left: 5rem;
+    /* margin-top: 2.6rem; */
+    margin-bottom:6.5rem;
+
+    background-color: white;
+    color: var(--verydark-blue);
+    border-radius: .6rem;
+    
+    font-size: .8rem;
+    word-spacing: 3.5px;
+    line-height: 1.4rem;
+
+    box-shadow:-2px 10px 24px -11px rgba(0,0,0,0.62)
+}
+.testimonials .quotes{
+    width: 1rem;
+}
+.testimonial-author{
+    display: flex;
+    flex-direction: row;
+    gap:.5rem;
+    /* margin-top: .4rem; */
+    font-family: var(--primary);
+}
+.testimonial-author h3{
+    font-weight: 700;
+    word-spacing: 1.5px;
+    font-size: .7rem;
+}
+.testimonial-author h4{
+    
+    margin-top: -8px;
+    word-spacing: 1.5px;
+    font-size: .5rem;
+}
+.testimonial-author img{
+    border-radius:50% ;
+    object-fit: cover;
+    height: 2rem;
+   width: 2rem;
+}
+
+
+/* <!-- Section Three --> */
+
+.section-three{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 18rem;
+
+    grid-template-areas: "info     email";
+
+    background-color: var(--desaturated-blue);
+    color: white;
+    padding: 6rem 5rem;
+    padding-bottom:5.3rem ;
+    font-family: var(--primary);
+}
+.section-three h2{
+    font-size: 1.8rem;
+    
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    word-spacing: 2.5px;
+}
+.section-three-info{
+    display: flex;
+    flex-direction: column;
+    grid-area: info;
+    gap: 1.5rem;
+    margin-top: .8rem;
+    /* width: 20rem; */
+}
+.section-three-info p{
+    line-height: 1.5rem;
+    word-spacing: 2.5px;
+}
+.section-three-email{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    grid-area: email;
+    margin-top: 1.1rem;
+}
+.section-three-email input{
+    padding:1rem;
+    border-radius: .3rem;
+    border: none;
+    /* border: none;width: 86%; */
+
+}
+.section-three-email input::placeholder{
+    color: var(--light-gray);
+    opacity: .8;
+}
+.section-three-email button{
+    padding: 1rem;
+    max-width: 75%;
+    word-spacing: 1.5px;
+
+
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 7rem 5.5rem;
+    align-items: flex-start;
+    /* margin-bottom: 0; */
+    background-color: var(--verydark-blue);
+    color: var(--light-grayish-blue);
+    
+}
+footer img{
+    max-width:70%;
+}
+.footer-info{
+    display: flex;
+    flex-direction: row;
+    gap:14rem;
+    width: 100%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap:3.5rem;
+   
+}
+.menu-1, .menu-2{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    letter-spacing: 1px;
+    /* margin-left:3rem; */
+    color: var(--light-grayish-blue) !important;
+}
+/* hover */
+button:hover{
+    transition: all ease-in-out.3s;
+    background-color: var(--hover-blue);
+}
+.menu-1 li:hover,.menu-2 li:hover{
+    transition: all ease-in-out.3s;
+    color: var(--bright-blue);
+}
+.linked-info:hover a {
+    color: hsl(170, 56%, 71%);
+ }
+
+ /* errors */
+/* .input-one.error{
+    position: relative;
+}
+.input-one.error::after{
+   position: absolute;
+   content: "Please check your email";
+   color: red;
+   left: 0;
+   width: inherit;
+   text-align: left;
+   font-family: var(--primary);
+   font-size: 0.8rem;
+   margin-top: 5px;
+} */
+
+
+@media screen and (max-width:1200px){
+    
+    .footer-info{
+        gap: 3rem;
+    }
+    .menu{
+        gap: 4rem;
+    }
+    .section-one img, .section-two-cover{
+        min-width: 80%;
+     }
+}
+@media screen and (max-width:960px){
+    nav{
+        padding: 2rem;
+    }
+    .section-one,.section-two,.section-three{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .section-description p{
+        /* text-align: center; */
+        padding: 1rem;
+    }
+    .section-one-email, .section-three-email{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+     
+    }
+    .section-one-email .input-one{
+        width: 50%;
+        padding-right: .5rem;
+    }
+    .section-one-email .button-one{
+        width: 40%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .section-description-2{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .info-main{
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .linked-info{
+        align-items: center;
+    }
+    .testimonials{
+        margin: 0 auto;
+        align-items: center;
+        margin-bottom: 6rem;
+    }
+    .section-three{
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+    
+    }
+    .section-three-email{
+        display: flex;
+        width: 100%;
+    }
+    .section-three-email .input-three{
+        width: 50%;
+    }
+    .section-three-email .button-three{
+      width: 40%;
+        
+    }
+   .section-one img{
+    max-width: 80%;
+   }
+
+}
+@media screen and (max-width:530px){
+    nav{
+        padding: 1rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        
+    }
+    ul{
+        gap: 2rem;
+        margin-right: 1.5rem;
+    }
+    .section-three,footer  {
+        padding: 1.5rem;
+    }
+    .section-three-email button{
+        min-width: 50%;
+        
+    }
+    .info-main{
+        width: 95%;
+    }
+    .section-one{
+        margin-bottom: 0;
+    }
+    .section-one img, .section-two-cover{
+       min-width: 80%;
+    }
+}

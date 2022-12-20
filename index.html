@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- typography -->
+<!-- font-family:'Raleway', -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+<!-- font-family: 'Open Sans', -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+      <nav>
+          <img src="images/logo.svg" alt="fylo-logo">
+          <ul>
+            <li>Features</li>
+            <li> Team</li>
+            <li>Sign In</li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+
+    <!-- Section One -->
+
+    <article class="section-one">
+      <img src="images/illustration-1.svg" alt="illustration-1">
+      <section class="section-description">
+          <h1> 
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p>  
+            Fylo stores your most important files in one secure location. 
+            Access them wherever you need, share and collaborate with friends, 
+            family, and co-workers.
+          </p>
+          <div class="section-one-email">
+            <input type="email" placeholder="Enter your email..." class="input-one">
+            <button class="button-one" type="submit">
+              Get Started
+            </button>
+          </div>
+      </section>
+    </article>
+
+    <!-- Section two -->
+    <picture>
+      <source media="(min-width: 768px)" srcset="images/bg-curve-desktop.svg" />
+      <img src="images/bg-curve-desktop.svg" alt="" class="img-curved" />
+    </picture> 
+    <article class="section-two">
+     
+      <img src="images/illustration-2.svg" alt="illustration-2" class="section-two-cover">
+      <section class="section-description-2">
+        <div class="info-main">
+          <div class="info">
+            <h2>
+              Stay productive, wherever you are
+            </h2>
+            <p>
+              Never let location be an issue when accessing your files. Fylo has you 
+              covered for all of your file storage needs.
+            </p>
+          </div>
+          <div class="linked-info">
+            <p>
+              Securely share files and folders with friends, family and colleagues for 
+              live collaboration. No email attachments required!
+            </p>
+            <a href="#">  See how Fylo works
+            </a>
+          </div>
+        </div>
+        <div class="testimonials">
+              <img src="images/icon-quotes.svg" alt="icon-quotes" class="quotes">
+              <p>
+                Fylo has improved our team productivity by an order of magnitude. Since 
+                  making the switch our team has become a well-oiled collaboration machine.
+              </p>
+              <div class="testimonial-author">
+                    <img src="images/avatar-testimonial.jpg" alt="avatar">
+                    <div class="author-info">
+                        <h3>
+                            Kyle Burton
+                        </h3>
+                        <h4>
+                            Founder & CEO, Huddle
+                        </h4>
+                    </div>
+              </div>
+        </div>
+      </section>
+    </article>
+
+<!-- Section Three -->
+
+    <article class="section-three">
+      <section class="section-three-info">
+        <h2>
+          Get early access today
+        </h2>
+        <p>
+          It only takes a minute to sign up and our free starter tier is extremely generous. 
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      </section>
+      <section class="section-three-email">
+        <input type="email" placeholder="email@example.com..." class="input-three">
+        <button class="button-three" type="submit">
+          Get Started For Free
+        </button>
+      </section>
+    </article>
+
+  </main>
+
+  <!-- Footer --> 
+
+  <footer>
+    <img src="images/logo-white.svg" alt="logo-white">
+    <section class="footer-info">
+      <div class="contacts">
+        <div class="phone contact">
+          <img src="images/icon-phone.svg" alt="phone-icon">
+          <p>
+            Phone: +1-543-123-4567
+          </p>
+        </div>
+        <div class="email contact">
+          <img src="images/icon-email.svg" alt="email-icon">
+          <p>
+            example@fylo.com
+          </p>
+        </div>
+      </div>
+      <div class="menu">
+        <ul class="menu-1">
+          <li>About Us</li>
+          <li>Jobs</li>
+          <li>Press</li>
+          <li>Blog</li>
+        </ul>
+        <ul class="menu-2">
+          <li>Contact Us</li>
+          <li>Terms</li>
+          <li> Privacy</li>
+        </ul>
+        <ul class="social">
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+</body>
+</html>
